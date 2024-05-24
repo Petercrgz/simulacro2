@@ -76,6 +76,13 @@ const loadModel = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.DATE,
       defaultValue: new Date()
+    },
+    // solucion
+    promoted: {
+      allowNull: false,
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+
     }
   }, {
     sequelize,
